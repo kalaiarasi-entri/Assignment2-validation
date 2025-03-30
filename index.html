@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="porfolio" />
+    <meta name="keyword" content="web development, E-commerce, fullstack" />
+    <!-- Adding title -->
+    <title>Portfolio-Kalaiarasi</title>
+    <!-- Linking style sheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Adding Header -->
+    <header>
+      <!-- adding name as logo -->
+      <h2 class="logo"><span>kalai.</span></h2>
+      <!-- Adding navigation menu -->
+      <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about-me">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="btn-contact">Contact Me</a>
+    </header>
+    <main>
+      <!-- About me section -->
+      <section class="aboutMe" id="about-me">
+        <div class="content">
+          <h2>Hi, I'm <span>Kalaiarasi</span></h2>
+          <h4>Full Stack and Magento Developer</h4>
+          <p>
+            I have 3 years of experience in E-commerce website development using
+            Magento. Additionally, I am working as a Full Stack Developer
+          </p>
+          <div class="btn-group">
+            <a href="#">Download Resume</a>
+          </div>
+        </div>
+      </section>
+      <!-- Adding skills Section -->
+      <section class="service-section" id="services">
+        <h1>Services</h1>
+        <div class="services">
+          <div class="card">
+            <img
+              src="images/web-development.png"
+              alt="Network issue"
+              width="300px"
+              height="300px"
+            />
+            <div class="container">
+              <h4><b>Web-development</b></h4>
+              <p>
+                Web development services to bring your ideas to life with
+                stunning, responsive, and efficient websites.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="images/automation.png"
+              alt="Network issue"
+              width="300px"
+              height="300px"
+            />
+            <div class="container">
+              <h4><b>Automation</b></h4>
+              <p>
+                Build automation websites to streamline tasks, enhance
+                efficiency, and improve productivity using automated testcases.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="images/e-commerce.png"
+              alt="No Network"
+              width="300px"
+              height="300px"
+            />
+            <div class="container">
+              <h4><b>E-commerce Website</b></h4>
+              <p>
+                Build e-commerce websites to provide seamless online shopping
+                experiences with secure payments and user-friendly interfaces
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Adding project details -->
+      <section class="projects" id="projects">
+        <div class="title">Projects</div>
+        <!-- project one -->
+        <div class="project-wrap">
+          <div class="project-image">
+            <img src="images/magroots.png" alt="Network Error" />
+          </div>
+          <div class="project-description">
+            <h3>Magroots</h3>
+            <p>
+              Magroots provides the mobile app extension that allows you to
+              convert your Magento site to a native mobile app.
+            </p>
+            <h3>Example Link</h3>
+            <p>
+              <a href="http://facebook.com/magrootsproduct/" target="_blank"
+                >http://facebook.com/magrootsproduct/</a
+              >
+            </p>
+            <h3>Technologies Used</h3>
+            <p>Magento 1, PHP, SQL, Jquery</p>
+          </div>
+        </div>
+        <hr />
+        <!-- Project two -->
+        <div class="project-wrap">
+          <div class="project-description">
+            <h3>Alliance UK</h3>
+            <p>
+              Alliance UK is a top provider of cleaning, janitorial, catering,
+              and hygiene supplies to both commercial and FM customers in the
+              UK. It developed using magento 2 technologies
+            </p>
+            <h3>Example Link</h3>
+            <p>
+              <a href="https://www.allianceuk.com/" target="_blank"
+                >https://www.allianceuk.com/</a
+              >
+            </p>
+            <h3>Technologies Used</h3>
+            <p>Magento 2, PHP, SQL</p>
+          </div>
+          <div class="project-image">
+            <img src="images/alliance-uk.png" alt="Network Error" />
+          </div>
+        </div>
+        <hr />
+        <!--Project three-->
+        <div class="project-wrap">
+          <div class="project-image">
+            <img src="images/autopropel.png" alt="Network Error" />
+          </div>
+          <div class="project-description">
+            <h3>Autopropel</h3>
+            <p>
+              AutoPropel helps speed up testing and makes automation faster for
+              both functional and non-functional testing. Its automation tool
+              allows early testing and lets teams create test scripts while
+              designing and developing software
+            </p>
+            <h3>Example Link</h3>
+            <p>
+              <a
+                href="https://www.linkedin.com/showcase/autopropel/about/"
+                target="_blank"
+                >https://www.linkedin.com/showcase/autopropel/about/</a
+              >
+            </p>
+            <h3>Technologies Used</h3>
+            <p>PHP, Selenium, Mysql</p>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Section Added -->
+      <section id="contact">
+        <div class="contact-container">
+          <h1>Contact Me</h1>
+          <form action="./confirmation.html">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              name="username"
+              pattern="[a-zA-Z\s]+"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              name="email"
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+              required
+            />
+
+            <label for="service">Service Needed</label>
+            <select required>
+              <option value="">----Select Service---</option>
+              <option value="">Web Development</option>
+              <option value="">Automation</option>
+              <option value="">E-commerce Site</option>
+            </select>
+
+            <label for="description">Description</label>
+            <textarea
+              placeholder="Describe your request..."
+              rows="6"
+              cols="20"
+              required
+            ></textarea>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </form>
+        </div>
+      </section>
+      <!-- Adding Footer -->
+      <section class="footer">
+        <footer>
+          <p>&copy; 2025 Kalaiarasi. All rights reserved.</p>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
